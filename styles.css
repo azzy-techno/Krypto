@@ -5,6 +5,17 @@
     overflow-x: hidden;
 }
 
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .header{
     min-height: 100vh;
     width: 100%;
