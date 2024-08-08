@@ -2,19 +2,12 @@ html {
     -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
 *{
     margin:0;
     padding:0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    width: auto;
+    overflow-x: hidden;
 }
 
 .header{
@@ -39,7 +32,8 @@ nav a:hover{
     color: black;
 }
 
-nav a{
+nav ul li a{
+    display: block
     text-decoration: none;
     color: whitesmoke;
     font-size: 20px;
