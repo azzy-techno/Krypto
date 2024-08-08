@@ -2,6 +2,12 @@ html {
     -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
 *{
     margin:0;
     padding:0;
@@ -33,8 +39,8 @@ nav a:hover{
 }
 
 nav ul li a{
-    display: block
     text-decoration: none;
+    display: block;
     color: whitesmoke;
     font-size: 20px;
     background-color: black;
