@@ -683,6 +683,7 @@ nav .fa{
     .mission-head h3{
         text-align: center;
         font-size: 20px;
+        padding-left: 0px;
     }
 
     .mission-content{
@@ -726,6 +727,7 @@ nav .fa{
     .mission-head-1 h3{
         text-align: center;      
         font-size: 20px;
+        padding-right: 0px;
     }
 
     .mission h1{
