@@ -32,7 +32,7 @@ nav{
     align-items: center;
 }
 
-nav a:hover{
+.nav-links ul li a:hover{
     background: white;
     transition: 1s;
     color: black;
