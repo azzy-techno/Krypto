@@ -1,0 +1,11 @@
+# robots.txt — Krypto Tech Services
+# https://kryptotechservices.com
+
+User-agent: *
+Allow: /
+
+# Block form handler from indexing
+Disallow: /form-handler.php
+
+# Sitemap location
+Sitemap: https://kryptotechservices.com/sitemap.xml
