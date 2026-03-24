@@ -1,509 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdul Azeez — Software Engineer</title>
-    <meta name="description" content="Abdul Azeez — Full Stack Software Engineer specialising in Java, Spring Boot, React.js, microservices and cloud architecture. 3 years experience. Based in Dammam, Saudi Arabia.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- ═══ PRIMARY SEO ═══════════════════════════════════════ -->
+    <title>Contact Krypto Tech Services | IT Support Bengaluru | +91 9632377552</title>
+    <meta name="description" content="Contact Krypto Tech Services for IT support in Bengaluru. Call +91 9632377552 or email support@kryptotechservices.com. Located in Richards Town, Bengaluru 560005. Mon–Sat 9AM–6PM.">
+    <meta name="keywords" content="contact IT support Bengaluru, IT company Richards Town Bengaluru, Krypto Tech Services phone number, IT support near me Bengaluru, IT helpdesk Bengaluru contact">
+    <meta name="author" content="Krypto Tech Services">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kryptotechservices.com/contact.html">
+
+    <!-- ═══ OPEN GRAPH ════════════════════════════════════════ -->
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://kryptotechservices.com/contact.html">
+    <meta property="og:title"       content="Contact Krypto Tech Services | IT Support Bengaluru">
+    <meta property="og:description" content="Call +91 9632377552 or email support@kryptotechservices.com. Richards Town, Bengaluru 560005. Mon–Sat 9AM–6PM.">
+    <meta property="og:image"       content="https://kryptotechservices.com/images/Contact.jpg">
+    <meta property="og:site_name"   content="Krypto Tech Services">
+    <meta property="og:locale"      content="en_IN">
+
+    <!-- ═══ TWITTER CARD ═════════════════════════════════════ -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Contact Krypto Tech Services | IT Support Bengaluru">
+    <meta name="twitter:description" content="Call +91 9632377552. IT support in Bengaluru, Mon–Sat 9AM–6PM.">
+    <meta name="twitter:image"       content="https://kryptotechservices.com/images/Contact.jpg">
+
+    <!-- ═══ GEO ══════════════════════════════════════════════ -->
+    <meta name="geo.region"    content="IN-KA">
+    <meta name="geo.placename" content="Bengaluru, Karnataka, India">
+    <meta name="geo.position"  content="13.006146;77.611868">
+    <meta name="ICBM"          content="13.006146, 77.611868">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --black:  #000000;
-            --dark:   #080808;
-            --dark2:  #0d0d0d;
-            --grey:   #888888;
-            --grey2:  #333333;
-            --white:  #e8e8e8;
-            --yellow: #F0E000;
-            --yellow2:#FFD700;
-            --yellow3:#b8aa00;
-            --fd: 'Bebas Neue', sans-serif;
-            --fm: 'Share Tech Mono', monospace;
-            --fb: 'Rajdhani', sans-serif;
-        }
-        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-        html { scroll-behavior:smooth; }
-        body {
-            background: var(--black);
-            color: var(--white);
-            font-family: var(--fb);
-            overflow-x: hidden;
-            cursor: crosshair;
-        }
-        /* scanlines */
-        body::before {
-            content:'';
-            position:fixed; inset:0;
-            background: repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.07) 2px,rgba(0,0,0,0.07) 4px);
-            pointer-events:none; z-index:1;
-        }
-        #rain { position:fixed; inset:0; z-index:0; opacity:.06; pointer-events:none; }
-        .cursor { position:fixed; width:18px; height:18px; border:2px solid var(--yellow); border-radius:50%; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); transition:width .15s,height .15s; mix-blend-mode:difference; }
-        .cdot   { position:fixed; width:4px; height:4px; background:var(--yellow); border-radius:50%; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); }
-        .wrap { max-width:1100px; margin:0 auto; padding:0 2rem; position:relative; z-index:2; }
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;0,700;0,900;1,300;1,700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-7.2.0-web/css/all.min.css">
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
 
-        /* NAV */
-        nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:1.2rem 2.5rem; display:flex; align-items:center; justify-content:space-between; background:rgba(0,0,0,0.88); backdrop-filter:blur(12px); border-bottom:1px solid rgba(240,224,0,0.1); }
-        .nlogo { font-family:var(--fd); font-size:1.8rem; color:var(--yellow); text-decoration:none; letter-spacing:.1em; text-shadow:0 0 20px rgba(240,224,0,.4); }
-        .nlinks { display:flex; gap:2rem; list-style:none; }
-        .nlinks a { font-family:var(--fm); font-size:.72rem; letter-spacing:.15em; color:var(--grey); text-decoration:none; text-transform:uppercase; transition:color .2s; position:relative; }
-        .nlinks a::after { content:''; position:absolute; bottom:-3px; left:0; width:0; height:1px; background:var(--yellow); transition:width .3s; }
-        .nlinks a:hover { color:var(--yellow); }
-        .nlinks a:hover::after { width:100%; }
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QDE9VNZP5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9QDE9VNZP5');
+    </script>
 
-        /* HERO */
-        .hero { min-height:100vh; display:flex; align-items:center; position:relative; overflow:hidden; padding:100px 0 60px; }
-        .bat-bg { position:absolute; right:-100px; top:50%; transform:translateY(-50%); opacity:.03; width:600px; pointer-events:none; animation:batf 7s ease-in-out infinite; }
-        @keyframes batf { 0%,100%{transform:translateY(-50%)} 50%{transform:translateY(-54%)} }
-        .glow-orb { position:absolute; top:-200px; right:-200px; width:700px; height:700px; border-radius:50%; background:radial-gradient(circle,rgba(240,224,0,.05),transparent 65%); animation:glowp 4s ease-in-out infinite; pointer-events:none; }
-        @keyframes glowp { 0%,100%{opacity:.5} 50%{opacity:1} }
-
-        .hero-tag { font-family:var(--fm); font-size:.72rem; letter-spacing:.2em; color:var(--yellow); text-transform:uppercase; margin-bottom:1rem; display:flex; align-items:center; gap:.75rem; }
-        .hero-tag::before { content:''; width:28px; height:1px; background:var(--yellow); display:block; }
-        .hero-name { font-family:var(--fd); font-size:clamp(3.5rem,10vw,7.5rem); line-height:.9; letter-spacing:.03em; color:var(--white); text-transform:uppercase; margin-bottom:.5rem; }
-        .hero-name em { color:var(--yellow); text-shadow:0 0 40px rgba(240,224,0,.35); display:block; font-style:normal; }
-        .hero-type { font-family:var(--fm); font-size:.95rem; color:var(--grey); letter-spacing:.08em; overflow:hidden; white-space:nowrap; border-right:2px solid var(--yellow); width:0; animation:tw 2.5s steps(42) .5s forwards, blink .7s step-end infinite 3.2s; margin-bottom:1.75rem; }
-        @keyframes tw { to{width:100%} }
-        @keyframes blink { 0%,100%{border-color:var(--yellow)} 50%{border-color:transparent} }
-        .hero-desc { font-size:1rem; color:var(--grey); font-weight:300; max-width:520px; line-height:1.75; margin-bottom:2.5rem; opacity:0; animation:fin 1s ease forwards 2.8s; }
-        .hero-btns { display:flex; gap:1rem; flex-wrap:wrap; opacity:0; animation:fin 1s ease forwards 3.2s; }
-        @keyframes fin { to{opacity:1} }
-
-        .btn-y { display:inline-flex; align-items:center; gap:.5rem; padding:.8rem 1.9rem; background:var(--yellow); color:var(--black); font-family:var(--fd); font-size:1.05rem; letter-spacing:.08em; text-decoration:none; text-transform:uppercase; clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px)); transition:all .2s; border:2px solid var(--yellow); }
-        .btn-y:hover { background:transparent; color:var(--yellow); }
-        .btn-g { display:inline-flex; align-items:center; gap:.5rem; padding:.8rem 1.9rem; background:transparent; color:var(--yellow); font-family:var(--fd); font-size:1.05rem; letter-spacing:.08em; text-decoration:none; text-transform:uppercase; clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px)); transition:all .2s; border:1px solid var(--yellow3); }
-        .btn-g:hover { background:rgba(240,224,0,.07); border-color:var(--yellow); }
-
-        .hstats { display:flex; flex-direction:row; gap:3rem; margin-top:3rem; opacity:0; animation:fin 1s ease forwards 3.6s; }
-        .hst { text-align:left; border-left:2px solid var(--yellow); padding-left:1rem; }
-        .hst-n { font-family:var(--fd); font-size:2.4rem; color:var(--yellow); line-height:1; }
-        .hst-l { font-family:var(--fm); font-size:.62rem; letter-spacing:.12em; color:var(--grey); text-transform:uppercase; }
-
-        /* GLITCH */
-        .glitch { position:relative; }
-        .glitch::before, .glitch::after { content:attr(data-text); position:absolute; top:0; left:0; width:100%; height:100%; }
-        .glitch::before { color:#ff0040; animation:g1 5s infinite; clip-path:polygon(0 20%,100% 20%,100% 40%,0 40%); }
-        .glitch::after  { color:#00eeff; animation:g2 5s infinite; clip-path:polygon(0 60%,100% 60%,100% 80%,0 80%); }
-        @keyframes g1 { 0%,92%,100%{transform:translate(0);opacity:0} 93%{transform:translate(-3px,1px);opacity:.7} 95%{transform:translate(3px,-1px);opacity:.7} 97%{transform:translate(0);opacity:0} }
-        @keyframes g2 { 0%,90%,100%{transform:translate(0);opacity:0} 91%{transform:translate(3px,1px);opacity:.5} 93%{transform:translate(-2px,-1px);opacity:.5} 95%{transform:translate(0);opacity:0} }
-
-        /* SECTIONS */
-        .sec { padding:6.5rem 0; position:relative; z-index:2; }
-        .sec-alt { background:var(--dark2); }
-        .sec-tag { font-family:var(--fm); font-size:.7rem; letter-spacing:.2em; color:var(--yellow); text-transform:uppercase; margin-bottom:.7rem; display:flex; align-items:center; gap:.75rem; }
-        .sec-tag::before { content:''; width:28px; height:1px; background:var(--yellow); display:block; }
-        .sec-h { font-family:var(--fd); font-size:clamp(2.2rem,5vw,3.8rem); letter-spacing:.04em; text-transform:uppercase; color:var(--white); line-height:1; margin-bottom:1rem; }
-        .sec-h span { color:var(--yellow); }
-        .sec-div { width:100%; height:1px; background:linear-gradient(90deg,var(--yellow),transparent); margin:1.25rem 0 3.5rem; opacity:.25; }
-
-        /* ABOUT */
-        .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; }
-        .about-p { font-size:.97rem; color:var(--grey); line-height:1.8; margin-bottom:1.2rem; font-weight:300; }
-        .about-p strong { color:var(--yellow); font-weight:600; }
-        .dets { display:flex; flex-direction:column; gap:.75rem; margin-top:1.75rem; }
-        .det { display:flex; align-items:center; gap:1rem; padding:.7rem 1rem; border:1px solid var(--grey2); border-left:3px solid var(--yellow); background:rgba(240,224,0,.02); transition:background .2s; }
-        .det:hover { background:rgba(240,224,0,.05); }
-        .det-lbl { font-family:var(--fm); font-size:.65rem; color:var(--grey); letter-spacing:.1em; text-transform:uppercase; width:80px; flex-shrink:0; }
-        .det-val { font-size:.9rem; color:var(--white); font-weight:500; }
-        /* Orbit visual */
-        .orb-vis { display:flex; align-items:center; justify-content:center; }
-        .orb { width:260px; height:260px; position:relative; }
-        .ring { position:absolute; inset:0; border:1px solid rgba(240,224,0,.12); border-radius:50%; animation:spin 20s linear infinite; }
-        .ring2 { inset:22px; border-color:rgba(240,224,0,.08); animation-duration:14s; animation-direction:reverse; }
-        .ring3 { inset:56px; border-color:rgba(240,224,0,.18); animation-duration:8s; }
-        @keyframes spin { to{transform:rotate(360deg)} }
-        .core { position:absolute; inset:82px; background:rgba(240,224,0,.05); border-radius:50%; border:1px solid rgba(240,224,0,.3); display:flex; align-items:center; justify-content:center; box-shadow:0 0 40px rgba(240,224,0,.08); }
-        .ini { font-family:var(--fd); font-size:2.8rem; color:var(--yellow); text-shadow:0 0 20px rgba(240,224,0,.5); letter-spacing:.05em; }
-        .odot { position:absolute; width:7px; height:7px; background:var(--yellow); border-radius:50%; box-shadow:0 0 10px var(--yellow); }
-        .od1 { top:8px; left:50%; transform:translateX(-50%); animation:op 2s ease-in-out infinite; }
-        .od2 { bottom:8px; right:18px; animation:op 2s ease-in-out infinite .6s; }
-        .od3 { left:8px; top:50%; transform:translateY(-50%); animation:op 2s ease-in-out infinite 1.2s; }
-        @keyframes op { 0%,100%{opacity:1;box-shadow:0 0 10px var(--yellow)} 50%{opacity:.2;box-shadow:0 0 3px var(--yellow)} }
-
-        /* EXPERIENCE */
-        .timeline { position:relative; padding-left:2rem; }
-        .timeline::before { content:''; position:absolute; left:0; top:0; bottom:0; width:1px; background:linear-gradient(to bottom,var(--yellow),transparent); }
-        .titem { position:relative; margin-bottom:3.5rem; padding-left:2rem; opacity:0; transform:translateX(-18px); transition:opacity .6s,transform .6s; }
-        .titem.vis { opacity:1; transform:translateX(0); }
-        .titem::before { content:''; position:absolute; left:-2.47rem; top:8px; width:10px; height:10px; background:var(--yellow); border-radius:50%; box-shadow:0 0 12px rgba(240,224,0,.6); }
-        .t-date { font-family:var(--fm); font-size:.68rem; letter-spacing:.12em; color:var(--yellow); text-transform:uppercase; margin-bottom:.4rem; }
-        .t-role { font-family:var(--fd); font-size:1.55rem; letter-spacing:.04em; color:var(--white); text-transform:uppercase; margin-bottom:.15rem; }
-        .t-co { font-family:var(--fm); font-size:.78rem; color:var(--yellow3); letter-spacing:.08em; margin-bottom:.9rem; }
-        .t-co span { color:var(--grey); margin-left:.4rem; }
-        .t-bul { list-style:none; display:flex; flex-direction:column; gap:.45rem; }
-        .t-bul li { font-size:.9rem; color:var(--grey); display:flex; gap:.7rem; line-height:1.6; }
-        .t-bul li::before { content:'▸'; color:var(--yellow); flex-shrink:0; }
-
-        /* SKILLS */
-        .sk-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; }
-        .sk-cat { background:var(--dark2); border:1px solid var(--grey2); border-top:2px solid var(--yellow); padding:1.6rem; clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px)); transition:box-shadow .2s,border-color .2s; }
-        .sk-cat:hover { box-shadow:0 0 25px rgba(240,224,0,.06); }
-        .sk-cat-h { font-family:var(--fd); font-size:1rem; letter-spacing:.1em; color:var(--yellow); text-transform:uppercase; margin-bottom:1.1rem; }
-        .sk-tags { display:flex; flex-wrap:wrap; gap:.45rem; }
-        .sk-t { font-family:var(--fm); font-size:.66rem; padding:.28rem .65rem; border:1px solid var(--grey2); color:var(--grey); letter-spacing:.06em; text-transform:uppercase; transition:all .2s; cursor:default; }
-        .sk-t:hover { border-color:var(--yellow); color:var(--yellow); background:rgba(240,224,0,.05); box-shadow:0 0 8px rgba(240,224,0,.12); }
-
-        /* PROJECTS */
-        .pj-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; }
-        .pj { border:1px solid var(--grey2); padding:1.9rem; position:relative; overflow:hidden; background:var(--dark); clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,0 100%); transition:border-color .3s,transform .3s; }
-        .pj::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--yellow),transparent); transform:scaleX(0); transform-origin:left; transition:transform .4s; }
-        .pj:hover { border-color:var(--yellow3); transform:translateY(-3px); box-shadow:0 10px 40px rgba(0,0,0,.5); }
-        .pj:hover::before { transform:scaleX(1); }
-        .pj-num { font-family:var(--fd); font-size:3.5rem; color:rgba(240,224,0,.05); position:absolute; top:.3rem; right:.9rem; line-height:1; pointer-events:none; }
-        .pj-tag { font-family:var(--fm); font-size:.63rem; letter-spacing:.15em; color:var(--yellow); text-transform:uppercase; margin-bottom:.65rem; display:flex; align-items:center; gap:.5rem; }
-        .pj-tag::before { content:'//'; color:var(--grey2); }
-        .pj-name { font-family:var(--fd); font-size:1.35rem; letter-spacing:.04em; color:var(--white); text-transform:uppercase; margin-bottom:.65rem; line-height:1.2; }
-        .pj-desc { font-size:.87rem; color:var(--grey); line-height:1.7; margin-bottom:1.2rem; }
-        .pj-tech { display:flex; flex-wrap:wrap; gap:.35rem; }
-        .tpill { font-family:var(--fm); font-size:.63rem; padding:.18rem .55rem; background:rgba(240,224,0,.07); border:1px solid rgba(240,224,0,.2); color:var(--yellow3); letter-spacing:.05em; }
-
-        /* CERTS */
-        .ce-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.1rem; }
-        .ce { border:1px solid var(--grey2); padding:1.4rem; background:var(--dark2); position:relative; transition:border-color .2s,box-shadow .2s; }
-        .ce::after { content:''; position:absolute; bottom:0; right:0; width:18px; height:18px; border-bottom:2px solid var(--yellow); border-right:2px solid var(--yellow); }
-        .ce:hover { border-color:var(--yellow3); box-shadow:0 0 18px rgba(240,224,0,.06); }
-        .ce-ic { font-size:1.4rem; margin-bottom:.65rem; }
-        .ce-nm { font-family:var(--fd); font-size:.95rem; letter-spacing:.05em; color:var(--white); text-transform:uppercase; margin-bottom:.25rem; }
-        .ce-is { font-family:var(--fm); font-size:.67rem; color:var(--yellow3); letter-spacing:.08em; }
-
-        /* CONTACT */
-        .ct-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start; }
-        .ct-h { font-family:var(--fd); font-size:clamp(1.8rem,3.5vw,3rem); color:var(--white); text-transform:uppercase; letter-spacing:.04em; line-height:1.1; margin-bottom:1.25rem; }
-        .ct-h span { color:var(--yellow); }
-        .ct-p { font-size:.97rem; color:var(--grey); line-height:1.7; margin-bottom:2rem; }
-        .ct-links { display:flex; flex-direction:column; gap:.9rem; }
-        .ct-lnk { display:flex; align-items:center; gap:1rem; padding:.9rem 1.2rem; border:1px solid var(--grey2); color:var(--grey); text-decoration:none; font-family:var(--fm); font-size:.82rem; transition:all .2s; position:relative; overflow:hidden; }
-        .ct-lnk::before { content:''; position:absolute; left:0; top:0; bottom:0; width:0; background:rgba(240,224,0,.06); transition:width .3s; }
-        .ct-lnk:hover { border-color:var(--yellow); color:var(--yellow); }
-        .ct-lnk:hover::before { width:100%; }
-        .ct-ic { color:var(--yellow); width:18px; text-align:center; flex-shrink:0; font-size:.9rem; }
-        /* Form */
-        .ff { margin-bottom:1.1rem; }
-        .ff label { display:block; font-family:var(--fm); font-size:.67rem; letter-spacing:.12em; color:var(--yellow); text-transform:uppercase; margin-bottom:.45rem; }
-        .ff input, .ff textarea { width:100%; background:rgba(255,255,255,.02); border:none; border-bottom:1px solid var(--yellow3); padding:.8rem .9rem; color:var(--white); font-family:var(--fm); font-size:.85rem; outline:none; transition:border-color .2s,background .2s; resize:none; }
-        .ff input:focus, .ff textarea:focus { border-color:var(--yellow); background:rgba(240,224,0,.03); }
-        .ff input::placeholder, .ff textarea::placeholder { color:var(--grey2); }
-
-        /* FOOTER */
-        footer { background:var(--black); border-top:1px solid rgba(240,224,0,.1); padding:2rem; text-align:center; position:relative; z-index:2; }
-        .flogo { font-family:var(--fd); font-size:2rem; color:var(--yellow); letter-spacing:.1em; text-shadow:0 0 20px rgba(240,224,0,.3); display:block; margin-bottom:.5rem; }
-        footer p { font-family:var(--fm); font-size:.68rem; color:var(--grey2); letter-spacing:.1em; line-height:1.8; }
-        footer a { color:var(--yellow3); text-decoration:none; }
-        footer a:hover { color:var(--yellow); }
-
-        /* REVEAL */
-        .rv { opacity:0; transform:translateY(22px); transition:opacity .7s ease,transform .7s ease; }
-        .rv.vis { opacity:1; transform:none; }
-        .rv.d1 { transition-delay:.1s; }
-        .rv.d2 { transition-delay:.2s; }
-        .rv.d3 { transition-delay:.3s; }
-
-        /* RESPONSIVE */
-        @media(max-width:900px){
-            .about-grid,.ct-grid{grid-template-columns:1fr;gap:3rem}
-            .orb-vis{display:none}
-            .sk-grid{grid-template-columns:1fr 1fr}
-            .pj-grid{grid-template-columns:1fr}
-            .ce-grid{grid-template-columns:1fr 1fr}
-            .hstats{gap:1.5rem}
-        }
-        @media(max-width:600px){
-            .sk-grid,.ce-grid{grid-template-columns:1fr}
-            .nlinks{display:none}
-            .hero-name{font-size:3.2rem}
-        }
-    </style>
+    <!-- ═══ JSON-LD ════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "@id": "https://kryptotechservices.com/contact.html",
+      "name": "Contact Krypto Tech Services",
+      "description": "Contact page for Krypto Tech Services — IT support company in Bengaluru, Karnataka.",
+      "url": "https://kryptotechservices.com/contact.html",
+      "isPartOf": { "@id": "https://kryptotechservices.com/#website" },
+      "about": { "@id": "https://kryptotechservices.com/#business" },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home",       "item": "https://kryptotechservices.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Contact Us", "item": "https://kryptotechservices.com/contact.html" }
+        ]
+      }
+    }
+    </script>
 </head>
 <body>
 
-<div class="cursor" id="cur"></div>
-<div class="cdot" id="cdot"></div>
-<canvas id="rain"></canvas>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">KRYPTO</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link active nav-cta">Contact Us</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
 
-<!-- NAV -->
-<nav>
-    <a href="/azzy" class="nlogo">AA//</a>
-    <ul class="nlinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#exp">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <!-- PAGE HERO -->
+    <header class="page-hero">
+        <div class="hero-img" style="background-image:url(images/Contact.jpg);background-position:top"></div>
+        <div class="hero-overlay"></div>
+        <div class="page-hero-content">
+            <span class="eyebrow fade-up">Reach Out</span>
+            <h1 class="fade-up delay-1">Contact <em>Us</em></h1>
+        </div>
+    </header>
 
-<!-- HERO -->
-<section class="hero" id="home">
-    <div class="glow-orb"></div>
-    <svg class="bat-bg" viewBox="0 0 100 55" fill="#F0E000">
-        <path d="M50 12 C36 4 16 7 5 19 C14 17 24 21 29 27 C20 25 10 29 8 39 C15 34 24 33 31 37 C35 41 41 44 50 44 C59 44 65 41 69 37 C76 33 85 34 92 39 C90 29 80 25 71 27 C76 21 86 17 95 19 C84 7 64 4 50 12Z"/>
-    </svg>
-    <div class="wrap">
-        <div style="position:relative;z-index:3;max-width:680px">
-            <div class="hero-tag">Full Stack Software Engineer</div>
-            <h1 class="hero-name glitch" data-text="ABDUL AZEEZ">
-                ABDUL
-                <em>AZEEZ</em>
-            </h1>
-            <div class="hero-type">Java // Spring Boot // React.js // Microservices // Cloud</div>
-            <p class="hero-desc">Building scalable, secure, production-ready applications. 3 years of full-stack experience across Java, Spring Boot, React.js, Docker and cloud architecture. Based in Dammam, Saudi Arabia — open to relocation across the Middle East.</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn-y">View Projects</a>
-                <a href="#contact" class="btn-g">Hire Me</a>
-            </div>
-            <div class="hstats">
-                <div class="hst"><div class="hst-n">3+</div><div class="hst-l">Years Exp</div></div>
-                <div class="hst"><div class="hst-n">4</div><div class="hst-l">Projects</div></div>
-                <div class="hst"><div class="hst-n">5</div><div class="hst-l">Certs</div></div>
+    <!-- MAP -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-wrap reveal">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7774.926451851709!2d77.61186864067365!3d13.006146799249443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16fa896fd39f%3A0x1753a771b3218eb4!2sRichards%20Town%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1737386461847!5m2!1sen!2sin"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Krypto Tech Services Location">
+                </iframe>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ABOUT -->
-<section class="sec" id="about">
-    <div class="wrap">
-        <div class="sec-tag rv">Profile Scan</div>
-        <h2 class="sec-h rv d1">About <span>Me</span></h2>
-        <div class="sec-div"></div>
-        <div class="about-grid">
-            <div class="rv">
-                <p class="about-p">Software Engineer with <strong>3 years of experience</strong> in full-stack development and technical support, specialising in building scalable, secure, and production-ready applications.</p>
-                <p class="about-p">Proficient in <strong>Java, JavaScript, and SQL</strong>, with strong hands-on experience in Spring Boot, React.js, Docker, and RESTful API development. Solid background in networking fundamentals and system troubleshooting.</p>
-                <p class="about-p">Holding a valid transferable <strong>Iqama</strong> and open to relocation opportunities across the Middle East. Recognised for strong problem-solving and delivering high-quality solutions in fast-paced environments.</p>
-                <div class="dets">
-                    <div class="det"><span class="det-lbl">Location</span><span class="det-val">Dammam, Saudi Arabia</span></div>
-                    <div class="det"><span class="det-lbl">Email</span><span class="det-val">abdulazeez55265@gmail.com</span></div>
-                    <div class="det"><span class="det-lbl">Degree</span><span class="det-val">B.Tech — Information Science &amp; Eng</span></div>
-                    <div class="det"><span class="det-lbl">LinkedIn</span><span class="det-val">in/abdul-azeez007</span></div>
-                    <div class="det"><span class="det-lbl">GitHub</span><span class="det-val">github.com/azzy-techno</span></div>
+    <!-- CONTACT SECTION -->
+    <section class="section contact-sec">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Info -->
+                <div class="contact-info reveal">
+                    <span class="tag">Our Location</span>
+                    <h2 class="sec-title">Richards Town, 560005</h2>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="ci-icon"><i class="fa-solid fa-house"></i></div>
+                            <div class="ci-text">
+                                <h5>Richards Town, Bengaluru</h5>
+                                <p>Karnataka, 560005</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="ci-text">
+                                <h5>+91 9632377552</h5>
+                                <p>Monday to Saturday, 9AM to 6PM</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon"><i class="fa-regular fa-envelope"></i></div>
+                            <div class="ci-text">
+                                <h5>support@kryptotechservices.com</h5>
+                                <p>Email us your query</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="contact-form-wrap reveal delay-2">
+                    <h3>Send Us a Message</h3>
+
+                    <!-- Success banner -->
+                    <div class="form-banner form-success" id="formSuccess" role="alert" aria-live="polite">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Message sent! We will get back to you within 24 hours.</span>
+                    </div>
+                    <!-- Error banner -->
+                    <div class="form-banner form-error" id="formError" role="alert" aria-live="polite">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span id="formErrorText">Please fix the errors below and try again.</span>
+                    </div>
+
+                    <form class="contact-form" id="contactForm"
+                          action="https://formspree.io/f/mnnavwyv"
+                          method="post" novalidate>
+
+                        <!-- Honeypot: invisible to humans, bots fill it in -->
+                        <div class="hp-field" aria-hidden="true">
+                            <label for="_gotcha">Leave this empty</label>
+                            <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-grp">
+                                <label for="fname">Your Name <span class="req">*</span></label>
+                                <input type="text" id="fname" name="name"
+                                    placeholder="John Doe"
+                                    maxlength="80"
+                                    autocomplete="name"
+                                    data-validate="name">
+                                <span class="field-error" id="err-fname"></span>
+                            </div>
+                            <div class="form-grp">
+                                <label for="fcompany">Company Name <span class="req">*</span></label>
+                                <input type="text" id="fcompany" name="company_name"
+                                    placeholder="Acme Corp"
+                                    maxlength="100"
+                                    autocomplete="organization"
+                                    data-validate="company">
+                                <span class="field-error" id="err-fcompany"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-grp">
+                                <label for="femail">Email Address <span class="req">*</span></label>
+                                <input type="email" id="femail" name="email"
+                                    placeholder="john@example.com"
+                                    maxlength="150"
+                                    autocomplete="email"
+                                    data-validate="email">
+                                <span class="field-error" id="err-femail"></span>
+                            </div>
+                            <div class="form-grp">
+                                <label for="fphone">Contact Number <span class="req">*</span></label>
+                                <input type="tel" id="fphone" name="number"
+                                    placeholder="+91 98765 43210"
+                                    maxlength="20"
+                                    autocomplete="tel"
+                                    data-validate="phone">
+                                <span class="field-error" id="err-fphone"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-grp">
+                            <label for="fmessage">Message <span class="req">*</span></label>
+                            <textarea id="fmessage" name="message"
+                                rows="6"
+                                placeholder="Tell us about your IT needs..."
+                                maxlength="2000"
+                                data-validate="message"></textarea>
+                            <div class="char-count"><span id="charCount">0</span> / 2000</div>
+                            <span class="field-error" id="err-fmessage"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-full" id="submitBtn">
+                            <span class="btn-label">Send Message <i class="fa-solid fa-paper-plane"></i></span>
+                            <span class="btn-loading" style="display:none"><i class="fa fa-spinner fa-spin"></i> Sending...</span>
+                        </button>
+
+                        <p class="form-note">
+                            <i class="fa-solid fa-lock"></i>
+                            Your information is secure and will never be shared with third parties.
+                        </p>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS CTA -->
+    <section class="news-cta">
+        <div class="container">
+            <div class="news-inner reveal">
+                <div class="news-bg" style="background-image:url(images/news.jpg)"></div>
+                <div class="news-overlay"></div>
+                <div class="news-content">
+                    <h2>Be the First to Receive the<br><em>Latest News from Krypto</em></h2>
+                    <a href="#" class="btn btn-white">Stay Updated <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
-            <div class="orb-vis rv d2">
-                <div class="orb">
-                    <div class="ring"></div>
-                    <div class="ring ring2"></div>
-                    <div class="ring ring3"></div>
-                    <div class="core"><div class="ini">AA</div></div>
-                    <div class="odot od1"></div>
-                    <div class="odot od2"></div>
-                    <div class="odot od3"></div>
-                </div>
-            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- EXPERIENCE -->
-<section class="sec sec-alt" id="exp">
-    <div class="wrap">
-        <div class="sec-tag rv">Mission Logs</div>
-        <h2 class="sec-h rv d1">Field <span>Experience</span></h2>
-        <div class="sec-div"></div>
-        <div class="timeline">
-            <div class="titem">
-                <div class="t-date">Jan 2024 — Oct 2025</div>
-                <div class="t-role">Full Stack Software Developer</div>
-                <div class="t-co">Pentagon Space <span>// Bengaluru, Karnataka</span></div>
-                <ul class="t-bul">
-                    <li>Developed and maintained web applications using Java, J2EE, Spring Boot, Hibernate and MySQL</li>
-                    <li>Designed front-end components utilising HTML5, CSS3, JavaScript and React.js</li>
-                    <li>Built REST APIs using Spring Boot for data exchange between front-end and back-end databases</li>
-                    <li>Participated in complete SDLC from requirements gathering through system implementation</li>
-                    <li>Implemented agile development practices ensuring timely delivery of high-quality solutions</li>
-                    <li>Optimised SQL queries for faster data retrieval and implemented JWT authentication</li>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">KRYPTO</a>
+                <p>Innovative IT solutions for forward-thinking businesses in Bengaluru and beyond.</p>
+                <ul class="socials">
+                    <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="titem">
-                <div class="t-date">Sep 2023 — Dec 2023</div>
-                <div class="t-role">Web Developer</div>
-                <div class="t-co">Solar Secure Solutions <span>// Bengaluru, Karnataka</span></div>
-                <ul class="t-bul">
-                    <li>Developed custom websites to meet individual client needs with clean, well-documented code</li>
-                    <li>Leveraged HTML, CSS and JavaScript to build top-quality code for diverse projects</li>
-                    <li>Collaborated with designers to ensure user-friendly and responsive interfaces</li>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="titem">
-                <div class="t-date">Sep 2022 — Sep 2023</div>
-                <div class="t-role">Desktop Support Engineer</div>
-                <div class="t-co">IPS International School <span>// Hyderabad, Telangana</span></div>
-                <ul class="t-bul">
-                    <li>Diagnosed hardware and software problems and performed troubleshooting to resolve issues</li>
-                    <li>Configured and installed hardware components — PCs, laptops, printers, and peripherals</li>
-                    <li>Installed Windows 7/8/10, Mac OSX and Linux; trained new staff on IT systems</li>
-                    <li>Monitored system performance metrics to ensure optimal IT resource operation</li>
+            <div class="footer-col">
+                <h4>Get In Touch</h4>
+                <ul class="footer-contact-list">
+                    <li><i class="fa-solid fa-location-dot"></i> Richards Town, Bengaluru, 560005</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 9632377552</li>
+                    <li><i class="fa-regular fa-envelope"></i> support@kryptotechservices.com</li>
                 </ul>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section class="sec" id="skills">
-    <div class="wrap">
-        <div class="sec-tag rv">Loading Arsenal</div>
-        <h2 class="sec-h rv d1">Technical <span>Skills</span></h2>
-        <div class="sec-div"></div>
-        <div class="sk-grid">
-            <div class="sk-cat rv d1">
-                <div class="sk-cat-h">⚙ Backend</div>
-                <div class="sk-tags"><span class="sk-t">Java</span><span class="sk-t">JavaScript</span><span class="sk-t">Spring Boot</span><span class="sk-t">Spring REST</span><span class="sk-t">Spring JPA</span><span class="sk-t">Spring Cloud</span><span class="sk-t">Hibernate</span><span class="sk-t">J2EE</span></div>
-            </div>
-            <div class="sk-cat rv d2">
-                <div class="sk-cat-h">⚡ Frontend</div>
-                <div class="sk-tags"><span class="sk-t">React.js</span><span class="sk-t">HTML5</span><span class="sk-t">CSS3</span><span class="sk-t">Bootstrap</span><span class="sk-t">Tailwind</span><span class="sk-t">JSON</span></div>
-            </div>
-            <div class="sk-cat rv d3">
-                <div class="sk-cat-h">🗄 Database</div>
-                <div class="sk-tags"><span class="sk-t">MySQL</span><span class="sk-t">PostgreSQL</span><span class="sk-t">MongoDB</span><span class="sk-t">Hibernate ORM</span></div>
-            </div>
-            <div class="sk-cat rv d1">
-                <div class="sk-cat-h">🔀 Microservices</div>
-                <div class="sk-tags"><span class="sk-t">API Gateway</span><span class="sk-t">Eureka</span><span class="sk-t">OpenFeign</span><span class="sk-t">gRPC</span><span class="sk-t">Kafka</span></div>
-            </div>
-            <div class="sk-cat rv d2">
-                <div class="sk-cat-h">🔒 Security</div>
-                <div class="sk-tags"><span class="sk-t">JWT</span><span class="sk-t">OAuth 2.0</span><span class="sk-t">Keycloak</span></div>
-            </div>
-            <div class="sk-cat rv d3">
-                <div class="sk-cat-h">☁ Deployment</div>
-                <div class="sk-tags"><span class="sk-t">Docker</span><span class="sk-t">LocalStack</span><span class="sk-t">GitHub Pages</span><span class="sk-t">Render</span><span class="sk-t">Vercel</span><span class="sk-t">Tomcat</span></div>
-            </div>
-            <div class="sk-cat rv d1">
-                <div class="sk-cat-h">🌐 Networking</div>
-                <div class="sk-tags"><span class="sk-t">LAN/WAN</span><span class="sk-t">TCP/IP</span><span class="sk-t">DNS</span><span class="sk-t">DHCP</span><span class="sk-t">HTTP/HTTPS</span><span class="sk-t">Troubleshooting</span></div>
-            </div>
-            <div class="sk-cat rv d2">
-                <div class="sk-cat-h">🤖 AI Tools</div>
-                <div class="sk-tags"><span class="sk-t">ChatGPT</span><span class="sk-t">Claude</span><span class="sk-t">Gemini</span><span class="sk-t">GitHub Copilot</span></div>
-            </div>
-            <div class="sk-cat rv d3">
-                <div class="sk-cat-h">🛠 Tools</div>
-                <div class="sk-tags"><span class="sk-t">IntelliJ IDEA</span><span class="sk-t">VS Code</span><span class="sk-t">Postman</span><span class="sk-t">Swagger</span><span class="sk-t">Maven</span><span class="sk-t">GitHub</span></div>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Krypto Tech Services. All rights reserved.</p>
+            <p style="font-size:0.75rem;margin-top:0.4rem">Designed &amp; built by <a href="/azzy" style="color:var(--teal-light);text-decoration:none;font-weight:500">Abdul Azeez</a></p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
         </div>
-    </div>
-</section>
+    </footer>
 
-<!-- PROJECTS -->
-<section class="sec sec-alt" id="projects">
-    <div class="wrap">
-        <div class="sec-tag rv">Classified Operations</div>
-        <h2 class="sec-h rv d1">Key <span>Projects</span></h2>
-        <div class="sec-div"></div>
-        <div class="pj-grid">
-            <div class="pj rv d1">
-                <div class="pj-num">01</div>
-                <div class="pj-tag">Personal Project</div>
-                <div class="pj-name">AI-Powered Daily Activity Planner</div>
-                <p class="pj-desc">Intelligent activity planning system with personalised AI suggestions via Google Gemini. Event-driven architecture using Apache Kafka, OAuth 2.0 + Keycloak authentication, containerised with Docker.</p>
-                <div class="pj-tech"><span class="tpill">Spring Boot</span><span class="tpill">React.js</span><span class="tpill">Gemini AI</span><span class="tpill">Kafka</span><span class="tpill">OAuth 2.0</span><span class="tpill">Keycloak</span><span class="tpill">Docker</span></div>
-            </div>
-            <div class="pj rv d2">
-                <div class="pj-num">02</div>
-                <div class="pj-tag">Personal Project</div>
-                <div class="pj-name">Patient Management System</div>
-                <p class="pj-desc">Production-ready enterprise patient management system. Integrated patient service, billing, and API gateway via gRPC/Kafka. Containerised with Docker and deployed on LocalStack for production readiness.</p>
-                <div class="pj-tech"><span class="tpill">Java</span><span class="tpill">Spring Boot</span><span class="tpill">gRPC</span><span class="tpill">Kafka</span><span class="tpill">Docker</span><span class="tpill">LocalStack</span></div>
-            </div>
-            <div class="pj rv d1">
-                <div class="pj-num">03</div>
-                <div class="pj-tag">Pentagon Space</div>
-                <div class="pj-name">E-Commerce Microservices App</div>
-                <p class="pj-desc">Modular e-commerce platform with product management, cart system, order service and user authentication. Integrated Eureka, Feign Client and API Gateway for seamless inter-service communication.</p>
-                <div class="pj-tech"><span class="tpill">Spring Boot</span><span class="tpill">Eureka</span><span class="tpill">Feign Client</span><span class="tpill">API Gateway</span><span class="tpill">MySQL</span><span class="tpill">JWT</span></div>
-            </div>
-            <div class="pj rv d2">
-                <div class="pj-num">04</div>
-                <div class="pj-tag">Pentagon Space</div>
-                <div class="pj-name">Tourism Management Portal</div>
-                <p class="pj-desc">Dynamic tourism platform with user registration, booking systems and admin dashboards. Email notifications and PDF generation for booking confirmations with full session handling.</p>
-                <div class="pj-tech"><span class="tpill">Java EE</span><span class="tpill">JSP</span><span class="tpill">Servlets</span><span class="tpill">JDBC</span><span class="tpill">MySQL</span><span class="tpill">PDF Gen</span></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section class="sec" id="certifications">
-    <div class="wrap">
-        <div class="sec-tag rv">Verified Credentials</div>
-        <h2 class="sec-h rv d1">Certifi<span>cations</span></h2>
-        <div class="sec-div"></div>
-        <div class="ce-grid">
-            <div class="ce rv d1"><div class="ce-ic">☕</div><div class="ce-nm">Java Full Stack Development</div><div class="ce-is">Pentagon Space</div></div>
-            <div class="ce rv d2"><div class="ce-ic">💻</div><div class="ce-nm">Full Stack Development</div><div class="ce-is">Sookshmas</div></div>
-            <div class="ce rv d3"><div class="ce-ic">🌐</div><div class="ce-nm">Web Development</div><div class="ce-is">Solar Secure Solutions</div></div>
-            <div class="ce rv d1"><div class="ce-ic">📱</div><div class="ce-nm">Responsive Web Design</div><div class="ce-is">FreeCodeCamp</div></div>
-            <div class="ce rv d2"><div class="ce-ic">🤖</div><div class="ce-nm">IoT &amp; Embedded Systems</div><div class="ce-is">AiRobosoft</div></div>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section class="sec sec-alt" id="contact">
-    <div class="wrap">
-        <div class="sec-tag rv">Open Comms</div>
-        <h2 class="sec-h rv d1" style="margin-bottom:3rem">Let's <span>Connect</span></h2>
-        <div class="ct-grid">
-            <div class="rv">
-                <h2 class="ct-h">Ready to Build<br>Something <span>Great?</span></h2>
-                <p class="ct-p">Available for full-time roles, freelance projects, and collaborations. Let's build something exceptional together.</p>
-                <div class="ct-links">
-                    <a href="mailto:abdulazeez55265@gmail.com" class="ct-lnk"><span class="ct-ic">✉</span>abdulazeez55265@gmail.com</a>
-                    <a href="https://linkedin.com/in/abdul-azeez007" target="_blank" class="ct-lnk"><span class="ct-ic">in</span>linkedin.com/in/abdul-azeez007</a>
-                    <a href="https://github.com/azzy-techno" target="_blank" class="ct-lnk"><span class="ct-ic">⌥</span>github.com/azzy-techno</a>
-                </div>
-            </div>
-            <div class="rv d2">
-                <form action="https://formspree.io/f/abdulazeez55265@gmail.com" method="POST">
-                    <div class="ff"><label>Your Name</label><input type="text" name="name" placeholder="Bruce Wayne" required></div>
-                    <div class="ff"><label>Email</label><input type="email" name="email" placeholder="bruce@wayneenterprises.com" required></div>
-                    <div class="ff"><label>Message</label><textarea name="message" rows="5" placeholder="I need a developer who works in the dark..." required></textarea></div>
-                    <button type="submit" class="btn-y" style="width:100%;justify-content:center;display:flex;border:none;cursor:pointer;font-size:1.1rem">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <span class="flogo">AA//</span>
-    <p>Abdul Azeez — Software Engineer &nbsp;·&nbsp; Dammam, Saudi Arabia<br>
-    Creator of <a href="https://kryptotechservices.com">kryptotechservices.com</a> &nbsp;·&nbsp;
-    <a href="https://linkedin.com/in/abdul-azeez007" target="_blank">LinkedIn</a> &nbsp;·&nbsp;
-    <a href="https://github.com/azzy-techno" target="_blank">GitHub</a></p>
-</footer>
-
-<script>
-/* cursor */
-const cur=document.getElementById('cur'), cdot=document.getElementById('cdot');
-let mx=0,my=0,cx=0,cy=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
-(function ac(){cx+=(mx-cx)*.12;cy+=(my-cy)*.12;cur.style.left=cx+'px';cur.style.top=cy+'px';cdot.style.left=mx+'px';cdot.style.top=my+'px';requestAnimationFrame(ac)})();
-document.querySelectorAll('a,button,.sk-t').forEach(el=>{
-    el.addEventListener('mouseenter',()=>{cur.style.width='38px';cur.style.height='38px'});
-    el.addEventListener('mouseleave',()=>{cur.style.width='18px';cur.style.height='18px'});
-});
-
-/* rain */
-const cv=document.getElementById('rain'),x=cv.getContext('2d');
-let W,H,dr=[];
-function ir(){W=cv.width=window.innerWidth;H=cv.height=window.innerHeight;dr=[];const c=Math.floor(W/16);for(let i=0;i<c;i++)dr.push({x:i*16,y:Math.random()*H,sp:1.5+Math.random()*3.5,ln:8+Math.random()*18,op:.2+Math.random()*.6});}
-function dr2(){x.clearRect(0,0,W,H);dr.forEach(d=>{x.beginPath();x.moveTo(d.x,d.y);x.lineTo(d.x,d.y+d.ln);x.strokeStyle=`rgba(240,224,0,${d.op})`;x.lineWidth=.7;x.stroke();d.y+=d.sp;if(d.y>H){d.y=-d.ln;d.op=.15+Math.random()*.5;}});requestAnimationFrame(dr2);}
-window.addEventListener('resize',ir);ir();dr2();
-
-/* scroll reveal */
-const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),{threshold:.1});
-document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
-
-/* timeline reveal */
-const to=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),{threshold:.1});
-document.querySelectorAll('.titem').forEach((el,i)=>{el.style.transitionDelay=(i*.15)+'s';to.observe(el);});
-</script>
+    <script src="main.js"></script>
+    <script src="validate.js"></script>
 </body>
 </html>
